@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden !important;
+  outline: none !important;
+}
+
+textarea {
+  max-height: 100%;
+  max-width: 100%;
+  padding-right: 440px;
+  font-size: 7.12vw;
+  line-height: 1.2;
+  resize: none;
+  border: 1px solid black;
+  outline: none;
+  overflow: hidden;
+  transition: color 1.5s;
+  position: absolute;
+  border: none;
+  top: 44%;
+  left: 17%;
+  z-index: -1;
+  display: block;
+  /* margin-left: 200px;
+  margin-right: 100px; */
+  color: rgba(0, 0, 0, 0.8);
+}
+
+textarea::placeholder {
+  opacity: 0.3 !important;
+}
+
+#control-panel {
+  /* display: none; */
+  opacity: 0;
+  max-height: 270px;
+  width: 500px;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 17px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#control-panel:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#demo {
+  margin: 25px;
+  width: 220px;
+  height: 50px;
+  /* position: absolute; */
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  background: rgba(43, 48, 100, 0.4);
+  color: #fff;
+  border-radius: 100px;
+  font-size: 15px;
+}
+
+#demo:hover {
+  background: rgba(29, 32, 68, 0.9);
+}
+
+#control-panel h1,
+p {
+  text-align: left !important;
+  margin-top: 27px;
+  margin-left: 50px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#control-panel p {
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 7px !important;
+}
+
+/* nav section  */
+
+nav {
+  width: 100%;
+  background: #fff;
+  height: 70px;
+  position: static;
+  z-index: 1;
+}
+
+nav #logo {
+  float: left;
+  display: block;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+nav #logo a {
+  color: #000;
+  transition: all 0.3s ease-out;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+nav #menu {
+  left: 55%;
+  position: relative;
+  visibility: hidden;
+}
+
+nav #menu li {
+  display: inline-block;
+  padding: 0px 30px;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+}
+
+nav #menu li a {
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav #menu li a:hover {
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+#toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+}
+
+#toggle .span {
+  height: 3px;
+  background: #000;
+  transition: all 0.3s ease-out;
+  backface-visibility: hidden;
+  margin: 5px auto;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#menu.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+
+@media (max-width: 4768px) {
+  #toggle {
+    visibility: visible;
+    margin-top: 6px;
+  }
+
+  #menu {
+    transition: all 0.3s ease-out;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  nav #menu {
+    padding: 0 500px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav #menu li {
+    padding: 0 20px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  textarea {
+    padding-right: 600px !important;
+    left: 25%;
+  }
+
+  #logo,
+  #logo a {
+    padding-left: 40px !important;
+  }
+
+  nav #menu {
+    left: 12% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #logo,
+  #logo a {
+    margin-left: 10px !important;
+    font-size: 45px !important;
+  }
+
+  nav #menu {
+    padding-right: 300px;
+  }
+
+  nav #menu li {
+    left: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  #logo {
+    display: none !important;
+  }
+
+  #control-panel {
+    /* display: none; */
+    opacity: 0;
+    height: 200px;
+    max-width: 350px;
+    top: 25%;
+  }
+
+  #demo {
+    width: 150px !important;
+    height: 50px;
+  }
+
+  #demoName {
+    font-size: 22px;
+  }
+
+  nav #menu {
+    left: 10%;
+  }
+}
+
+@media (min-width: 400px) {
+  nav #menu {
+    top: 2%;
+    left: 10%;
+  }
+
+  #homePage {
+    display: none;
+  }
+
+  nav #menu li {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  textarea {
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 300px) {
+  nav #menu li {
+    padding: 0 6px;
+  }
+
+  #homePage {
+    display: none;
+  }
+
+  textarea {
+    padding-right: 100px;
+  }
+}

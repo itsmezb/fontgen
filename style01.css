@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+/* Navigation Section */
+
+nav {
+  width: 100%;
+  background: #fff;
+  height: 70px;
+  position: static;
+  z-index: 1;
+  overflow: hidden;
+}
+
+nav #logo {
+  float: left;
+  display: block;
+  font-size: 30px;
+  line-height: 70px;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+nav #logo a {
+  color: #000;
+  transition: all 0.3s ease-out;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+
+nav #menu {
+  left: 55%;
+  position: relative;
+}
+
+nav #menu li {
+  display: inline-block;
+  padding: 0px 30px;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+}
+
+nav #menu li a {
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav #menu li a:hover {
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+/* Container section */
+
+#fontMessage {
+  position: absolute;
+  text-align: center;
+  left: 40%;
+  top: 15%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.7rem;
+  font-weight: 204;
+}
+
+#searchWrap input {
+  position: absolute;
+  left: 36%;
+  top: 28%;
+  height: 70px;
+  width: 500px;
+  cursor: auto;
+  font-size: 1.5rem;
+  padding-left: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#searchWrap input::placeholder {
+  text-align: 50px;
+}
+
+#container {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: #000000; */
+  top: 35%;
+  left: 20%;
+  right: 20%;
+  position: absolute;
+}
+
+.card {
+  background: rgba(48, 95, 114, 0.99);
+  color: #fff;
+  /* padding: 30px 70px 45px 70px; */
+  width: 650px;
+  height: 340px;
+  padding: 30px 50px;
+  border-radius: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 130px;
+  box-shadow: 10px 22px 20px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card h1 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 14px;
+}
+
+.card:hover {
+  box-shadow: 10px 22px 20px 8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.18);
+}
+
+.code {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 2px 5px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+/* copy icon  */
+
+.fas,
+fa-copy {
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+.fas:hover,
+fa-copy:hover {
+  color: #ed254e;
+}
+
+@media (max-width: 1800px) {
+  nav #menu {
+    left: 50%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 5%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  nav #menu {
+    left: 45%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 5%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  nav #menu {
+    left: 40%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 8%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  nav #menu {
+    left: 20%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 7%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+
+  .card {
+    width: 700px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #fontMessage {
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 15%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 204;
+  }
+
+  #searchWrap input {
+    position: absolute;
+    left: 25%;
+    top: 28%;
+    height: 70px;
+    width: 450px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  nav #menu {
+    left: 13%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 4%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+
+  .card {
+    width: 600px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #fontMessage {
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 15%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 204;
+  }
+
+  #searchWrap input {
+    position: absolute;
+    left: 25%;
+    top: 28%;
+    height: 70px;
+    width: 400px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  nav #menu {
+    left: 5%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 3%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 3.4rem !important;
+  }
+
+  .card {
+    width: 550px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #fontMessage {
+    display: none;
+  }
+  #searchWrap input {
+    position: absolute;
+    left: 25%;
+    top: 28%;
+    height: 70px;
+    width: 350px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  nav #menu {
+    left: 0%;
+    position: relative;
+  }
+  nav #logo {
+    margin-left: 1%;
+  }
+
+  nav #logo a {
+    font-weight: 500;
+    font-size: 2.4rem !important;
+  }
+
+  .card {
+    width: 500px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #fontMessage {
+    display: none;
+  }
+  #searchWrap input {
+    position: absolute;
+    left: 21%;
+    top: 28%;
+    height: 70px;
+    width: 350px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  nav #menu {
+    left: 10%;
+    position: relative;
+  }
+
+  nav #logo {
+    display: none;
+  }
+
+  .card {
+    width: 420px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #fontMessage {
+    display: none;
+  }
+  #searchWrap input {
+    position: absolute;
+    left: 20%;
+    top: 28%;
+    height: 70px;
+    width: 300px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  nav #menu {
+    left: 5%;
+    position: relative;
+  }
+
+  nav #logo {
+    display: none;
+  }
+
+  .card {
+    width: 400px;
+    height: 350px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  #container {
+    width: 100%;
+    left: 0%;
+  }
+  #fontMessage {
+    display: none;
+  }
+  #searchWrap input {
+    position: absolute;
+    left: 10%;
+    top: 28%;
+    height: 70px;
+    width: 290px;
+    cursor: auto;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  nav #menu {
+    left: 5%;
+    position: relative;
+  }
+
+  nav #logo {
+    display: none;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+    padding: 50px 50px;
+  }
+}
