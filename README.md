@@ -4,7 +4,7 @@
 - over 199+ Fonts
 - Free To Use
 - Easy To Use (Type and generate!)
-- Embedded code (Copy and paste in your .css file!)
+- Embedded code (Copy and paste it to your .css file!)
 - Weekly 10+ new fonts
 
 ------------
