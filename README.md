@@ -4,8 +4,9 @@
 - over 199+ Fonts
 - Free To Use
 - Easy To Use (Type and generate!)
+- Responsive for all popular devices
 - Embedded code (Copy and paste it to your .css file!)
-- Weekly 10+ new fonts
+- Added 10 Fonts + 
 
 ------------
 
